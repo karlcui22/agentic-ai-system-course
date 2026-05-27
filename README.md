@@ -35,6 +35,18 @@ You can also just point your agent at Ch.22's design canvas and walk through it 
 
 ---
 
+## Built-in skills
+
+### `agentic-system-reviewer`
+
+Reviews PRDs, design docs, implementation plans, or agent code against the course. You can run this skill on **any agentic system** to get course-grounded feedback — your own project, an open-source agent you're studying, a PRD before any code exists, or a coworker's repo you want a second opinion on. The skill calibrates scope first (hobby / team tool / customer-facing), picks the chapters that matter for your archetype, reads them, and produces a findings-first report with severity, evidence, course citations, and concrete fixes — not a generic "looks good" or "add safety" review.
+
+In Claude Code, just describe what you want — *"review this against the course"*, *"is this agent design good?"*, *"what chapters does this miss?"* — while the agent is pointed at the target repo or doc. The skill auto-loads when its description matches your intent.
+
+**Codex users:** use Codex's official `skill-creator` skill to port this skill over.
+
+---
+
 ## Course structure
 
 | Chapters | Theme |
@@ -84,6 +96,7 @@ CLAUDE.md       — Behavioral guide for your AI partner (read by Claude Code)
 AGENTS.md       — Same content as CLAUDE.md, named for Codex / Cursor / other agents
 README.md       — This file
 setup.sh        — Optional: clone the four reference repos
+.claude/skills/ — Built-in skills your AI partner can invoke (reviewer; more coming)
 docs/           — Written notes your AI partner produces on request (created on demand)
 questions/      — Daily Q&A log your AI partner writes automatically (created on demand)
 workspace/      — Code, exercises, and project builds (created on demand)
