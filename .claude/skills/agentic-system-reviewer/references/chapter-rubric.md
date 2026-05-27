@@ -31,7 +31,7 @@ Use this after scope is known. Read relevant `course/*.md` files before citing t
 
 ## Chapter Selection Guard
 
-Pick the smallest set of chapters that can explain the real risks, normally 3-6 chapters. If more than 6 chapters look central, do not review against the entire course in one pass. Flag the artifact as too broad, split the review by subsystem, or ask which slice matters most.
+Pick the smallest set of chapters that can explain the real risks, normally 3-6 chapters. This cap governs primary (deep-reviewed) chapters only — the report's Chapter Coverage table should still list every chapter the archetype rubric flagged as relevant, even if they were deferred. If more than 6 chapters look central as primary, do not review against the entire course in one pass. Flag the artifact as too broad, split the review by subsystem, or ask which slice matters most.
 
 ## Scope-Aware Expectations
 

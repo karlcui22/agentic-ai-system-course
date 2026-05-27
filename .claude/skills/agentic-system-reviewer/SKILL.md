@@ -49,6 +49,8 @@ Before reviewing, create a "clarification ledger" in your working notes and carr
 
 If the user asks for a saved standalone deliverable, write the report to `docs/agentic-system-review-<slug>.md`. If the review is part of a project being built or handed off, write it inside that project, for example `workspace/<project>/agentic-system-review-<slug>-<date>.md`, with any saved ledger next to it.
 
+When explaining scope calibration to the user during intake, prefer plain-language framing ("personal hobby" vs "team tool" vs "customer-facing") over tier numbers — the user has not read the rubric.
+
 If unclear, ask up to 3 batched questions. Favor questions that determine chapter relevance:
 - Who uses this, and are real users/customers affected?
 - What can the agent actually do: read only, draft, send, modify, spend, delete, deploy?
@@ -77,7 +79,7 @@ Optional helper:
 node .claude/skills/agentic-system-reviewer/scripts/suggest-chapters.mjs <path> [...]
 ```
 
-Select a maximum of 6 primary chapters for a normal review. If more than 6 chapters seem equally important, treat that as evidence the artifact is too broad or the review needs multiple passes; name that as a finding instead of grading against the entire course at once.
+Select up to 6 **primary** chapters — the ones you read in full and write findings against. All other archetype-relevant chapters still appear in the report's Chapter Coverage table with a one-line rationale (reviewed / considered / deferred). The cap is on **depth**, not coverage. If more than 6 chapters look equally central for primary review, treat that as evidence the artifact is too broad or the review needs multiple passes; name that as a finding.
 
 Course files live under `course/` and are named by chapter number, for example `course/03-tools-validation.md` and `course/22-designing-your-own-agent.md`. Open the chapter file before citing it in a finding or coverage table.
 
