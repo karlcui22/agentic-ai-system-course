@@ -1,7 +1,6 @@
 .DS_Store
 **/.DS_Store
-.claude/
-docs/
-questions/
-workspace/
-references/
+/docs/
+/questions/
+/workspace/
+/references/

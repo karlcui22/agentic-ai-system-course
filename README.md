@@ -1,22 +1,16 @@
 # Agentic System Course - Use Agent to Learn Agent
 
-**Join the [discord channel](https://discord.gg/dWSnHAFdpb) if you want to learn and build together! **
+**Join the [discord channel](https://discord.gg/dWSnHAFdpb) if you want to learn and build together!**
 
 ---
 
-This is a 22-chapter skeleton course on how to design, build, and operate production AI agents — written to be read with your own AI partner at your side. **An agentic system** is an AI system that can autonomously pursue goals by planning, making decisions, using tools, adapting based on feedback, having memory, etc — instead of only responding to a single prompt. A few use cases are: 
-
-- **Healthcare**: Multiple AI agents can coordinate patient intake, insurance verification, scheduling, lab monitoring, and discharge planning to automate hospital operations and reduce administrative burden.
-- **Customer support**: Specialized AI agents can collaboratively handle ticket triage, knowledge retrieval, sentiment analysis, escalation routing, and follow-up communication to improve support efficiency and response quality.
-- **Supply chain**: Multi-agent AI systems can continuously optimize procurement, inventory, production scheduling, and logistics by adapting in real time to disruptions and changing demand.
-
-Similar to [Andrej Karpathy's idea file on LLM-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), **this course is giving you the skeleton and your agent will help you put the muscles on it**.
+This is a 22-chapter skeleton course on how to design, build, and operate production AI agents — written to be read with your own AI partner at your side. **An agentic system** is an AI system that can autonomously pursue goals by planning, making decisions, using tools, adapting based on feedback, having memory, etc — instead of only responding to a single prompt. Similar to [Andrej Karpathy's idea file on LLM-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), **this course is giving you the skeleton and your agent will help you put the muscles on it**.
 
 **This course is**:
 
 - A *skeleton* — load-bearing topics, patterns, and decisions, with trade-offs.
 - Written to age slowly. Framework specifics rot fast; architectural patterns do not.
-- A file pair (course + CLAUDE.md) designed for AI consumption as much as human reading.
+- A file pair (course + AGENTS.md) designed for AI consumption as much as human reading.
 
 **This course is not**:
 
@@ -29,11 +23,7 @@ Similar to [Andrej Karpathy's idea file on LLM-wiki](https://gist.github.com/kar
 
 ## How to start
 
-How you start depends on your background. The course works the same either way — only the prompts differ.
-
-### If you are technical
-
-Clone the repo, open it in your usual IDE. At the same time, point your AI agent (Claude code/Codex) at the project root, and try one of these prompts when you study a chapter:
+Clone the repo, open it in your usual IDE to view course content. At the same time, point your AI agent (Claude code/Codex) at the project root, and try one of these prompts when you study a chapter:
 
 - *"Give me three real-world examples of where this matters."*
 - *"Suppose you are interviewing me, quiz me on this topic with five follow-up questions, easy to hard."*
@@ -43,18 +33,17 @@ Clone the repo, open it in your usual IDE. At the same time, point your AI agent
 
 You can also just point your agent at Ch.22's design canvas and walk through it with your specific project in mind — that's the fastest path from "I have an idea" to "I have a spec."
 
-### If you are not technical
+---
 
-Don't worry about understanding any chapter before you do — your AI partner will explain everything as you go.
+## Built-in skills
 
-First download this project to your computer. Either directly download the zip file, or if you have `git` installed, run `git clone <this-repo-URL>` in a terminal. Then use either Claude code or Codex to open this folder, then start chatting. A few prompts you can try:
+### `agentic-system-reviewer`
 
-- *"I want to build [your project]. The goal is [the outcome you want for users]. Design an agentic system for me using this course as the guide, put it in a EXEC_PLAN doc. If uncertain, ask for clarification."*
-- *"Can you build a MVP working prototype of [your project] using the patterns in this course? Explain what each piece does in plain language and record it in a detailed implementation plan doc."*
-- *"Give me a PRD for [your project]. The goal is [the outcome you want for users]. If you are unsure about requirements, use Ch.22's design canvas as the spine and ask me."*
+Reviews PRDs, design docs, implementation plans, or agent code against the course. You can run this skill on **any agentic system** to get course-grounded feedback — your own project, an open-source agent you're studying, a PRD before any code exists, or a coworker's repo you want a second opinion on. The skill calibrates scope first (hobby / team tool / customer-facing), picks the chapters that matter for your archetype, reads them, and produces a findings-first report with severity, evidence, course citations, and concrete fixes — not a generic "looks good" or "add safety" review.
 
-The agent writes the code and designs the system. Your job is to see their response, try the product, ask questions, raise features, and push back when something doesn't make sense.
+In Claude Code, just describe what you want — *"review this against the course"*, *"is this agent design good?"*, *"what chapters does this miss?"* — while the agent is pointed at the target repo or doc. The skill auto-loads when its description matches your intent.
 
+**Codex users:** use Codex's official `skill-creator` skill to port this skill over.
 
 ---
 
@@ -87,9 +76,7 @@ The course occasionally points at four open-source systems for grounded examples
 - **OpenClaw** — self-hosted personal-assistant gateway (channel adapters)
 - **Paperclip** — workflow control plane (multi-agent orchestration, durable Postgres state)
 
-You do **not** need to clone any of these to get value from the course. Most readers — especially non-engineers — will finish without ever looking at the source. These four are sanity checks.
-
-If you're an engineer and you find yourself wanting grounded answers (*"how does X actually do Y in code?"*), your AI partner will offer to clone the relevant repo on demand, or you can run setup beforehand:
+You do **not** need to clone any of these to get value from the course, these four are sanity checks. If you find yourself wanting grounded answers (*"how does X actually do Y in code?"*), your AI partner will offer to clone the relevant repo on demand, or you can run setup beforehand:
 
 ```bash
 ./setup.sh
@@ -109,6 +96,7 @@ CLAUDE.md       — Behavioral guide for your AI partner (read by Claude Code)
 AGENTS.md       — Same content as CLAUDE.md, named for Codex / Cursor / other agents
 README.md       — This file
 setup.sh        — Optional: clone the four reference repos
+.claude/skills/ — Built-in skills your AI partner can invoke (reviewer; more coming)
 docs/           — Written notes your AI partner produces on request (created on demand)
 questions/      — Daily Q&A log your AI partner writes automatically (created on demand)
 workspace/      — Code, exercises, and project builds (created on demand)

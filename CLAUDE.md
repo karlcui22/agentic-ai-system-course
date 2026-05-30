@@ -53,7 +53,7 @@ Each chapter has a stable shape: **TL;DR**, **Why this matters**, **The concept*
 
 ### Reference systems: optional, triggered, not required
 
-The four reference systems are **not required** to start the course. The course is designed so the chapters carry the concepts on their own; references add *grounded implementation detail* when the student wants it. Most students — especially non-technical readers and curious explorers — will finish the course without ever cloning a single repo. That is the intended path.
+The four reference systems are **not required** to start the course. The course is designed so the chapters carry the concepts on their own; references add *grounded implementation detail* when the student wants it. 
 
 **Default behavior**: answer from the course content, your training, and web search when needed. 
 
@@ -86,13 +86,13 @@ External references to fetch from the web when relevant: **MetaClaw** + **Tinker
 
 ### Suggested learning paths
 
-Match the path to what the student wants to build:
+The following paths are only suggested defaults. If students how intent to build other projects, come up with a new personalized learning path.
 
+- **Just exploring** → Ch.00 → Ch.01 → Ch.02 in order. Foundations first; jump around after Ch.04. No reference clones needed.
 - **Coding agent** → Ch.00, Ch.22 (intent), Ch.01–04, Ch.05, Ch.08, Ch.12, Ch.16–17, Ch.18. OpenCode is the home reference (offer to clone when implementation questions get deep).
 - **Personal assistant** → Ch.00, Ch.22, Ch.01–02, Ch.05–07, Ch.13, Ch.16, Ch.19, Ch.20–21. Hermes Agent and OpenClaw are the home references.
 - **Multi-tenant company tool** → Ch.00, Ch.22, Ch.11, Ch.13, Ch.15, Ch.12, Ch.18–19. Paperclip is the home reference.
 - **Research / knowledge agent** → Ch.00, Ch.22, Ch.04–07, Ch.16, Ch.21. Hermes Agent's memory patterns + OpenCode's compaction.
-- **Just exploring** → Ch.00 → Ch.01 → Ch.02 in order. Foundations first; jump around after Ch.04. No reference clones needed.
 
 ---
 
